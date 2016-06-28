@@ -27,13 +27,13 @@ public class MainActivityTest {
 
     @Test
     public void validateTextViewContent() {
-        TextView myRestaurantsTextView = (TextView) activity.findViewById(R.id.myRestaurantsTextView);
+        TextView myRestaurantsTextView = (TextView) activity.findViewById(R.id.myRestaurants);
         assertTrue("MyRestaurants".equals(myRestaurantsTextView.getText().toString()));
     }
 
     @Test
     public void secondActivityStartedOnClick() {
-        activity.findViewById(R.id.findRestauranButton).performClick();
+        activity.findViewById(R.id.findRestaurantButton).performClick();
 
         // The intent we expect to be launched when a user clicks on the button
         Intent expectedListByZip = new Intent(activity, RestaurantsActivity.class);
