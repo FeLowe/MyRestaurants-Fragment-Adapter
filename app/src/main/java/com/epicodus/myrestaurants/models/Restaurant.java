@@ -20,6 +20,10 @@ public class Restaurant {
 
     public Restaurant() {}
 
+    //you may need to write your own @Override method to compare equal objects
+
+
+
     public Restaurant(String name, String phone, String website, double rating, String imageUrl, ArrayList<String> address, double latitude, double longitude, ArrayList<String> categories) {
         this.name = name;
         this.phone = phone;
